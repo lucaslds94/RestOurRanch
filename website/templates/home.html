@@ -40,9 +40,28 @@
     </header>
 
     <section class="sectionOne">
-        <div></div>
-        <div></div>
-        <div></div>
+        <ul class = "banner">
+            <li>
+                <input type= "radio" id= "slide1" name= "slide" checked>
+                <label for="slide1"></label>
+                <a href="#"><img src="{% static '/images/img-banner-01.jpg' %}" alt="primeira imagem do slider"></a>
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <a href="#"><img src="{% static '/images/img-banner-02.jpg' %}" alt="segunda imagem do slider"></a>
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide">
+                <label for="slide3"></label>
+                <a href="#"><img src="{% static '/imagens/img-banner-03.jpg' %}" alt="terceira imagem do slider"></a>
+            </li>
+            <li>
+                <input type="radio" id="slide4" name="slide">
+                <label for="slide4"></label>
+                <a href="#"><img src="{% static '/images/img-banner-04.jpg' %}" alt="quarta imagem do slider"></a>
+            </li>
+        </ul>
     </section>
 
     <section class="sectionTwo">
