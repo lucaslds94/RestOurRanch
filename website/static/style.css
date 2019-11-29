@@ -46,8 +46,17 @@ header{
     display:none;
 }
 
+.userIcon a img{
+    height: 40px;
+    margin-right: 20px;
+}
+
 .menuIcon{
     display:none
+}
+
+.menuIcon a img {
+    height:80px;
 }
 
 .sectionOne{
@@ -83,6 +92,7 @@ footer {
     header{
         display:flex;
         justify-content: space-between;
+        
     }
     .menu{
         display:none;
@@ -90,14 +100,18 @@ footer {
     .menuIcon{
         align-items: center;
         display:flex;
-        height:50px;
+        height:60px;
         margin: 5px;
+        justify-content: flex-start;
+        order:-1;
     }
     .logo{
         align-items: center;
-        display: block; 
+        display: flex;
+        justify-content: center; 
     }
     .userIcon{
         display:block;  
+        order: 1;
     }
 }
