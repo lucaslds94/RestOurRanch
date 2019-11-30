@@ -57,8 +57,11 @@ header{
     cursor: pointer;
 }
 
-.menuIcon a img {
-    height:80px;
+.menuIcon div{
+    width:25px;
+    height:3px;
+    background-color:black;
+    margin: 5px;
 }
 
 .section1{
@@ -181,11 +184,8 @@ footer {
         opacity: 0;
     }
     .menuIcon{
-        align-items: center;
-        display:flex;
-        height:60px;
-        margin: 5px;
-        justify-content: flex-start;
+        display:block;
+        margin-left: 15px;
         order:-1;
     }
     .logo{
