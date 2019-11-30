@@ -34,10 +34,14 @@ header{
 .menu a{  
     
     font-weight:500;
-    margin:0px 20px;
+    margin:0px 30px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color:#fff;
+}
+.menu a:hover{
+    color:#95A3B3;
+    opacity:0.8;
 }
 
 .menuLogin a{  
@@ -46,6 +50,10 @@ header{
     text-decoration:none;
     font-family: 'Poppins', sans-serif;
     color:#fff;
+}
+.menuLogin a:hover{
+    color:#95A3B3;
+    opacity:0.8;
 }
 .botao{
     border-radius:30px;
