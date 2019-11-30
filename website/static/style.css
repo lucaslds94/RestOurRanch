@@ -174,12 +174,11 @@ footer {
         justify-content: space-around;
         width: 40%;
         transform:translateX(-300px) ;
-        transition: transform 0.5s ease-in;
-        
+        transition: transform 0.5s ease-in;   
     }
     .menu a{
-        font-size: 1em;
-        
+        font-size: 1em; 
+        opacity: 0;
     }
     .menuIcon{
         align-items: center;
@@ -188,7 +187,6 @@ footer {
         margin: 5px;
         justify-content: flex-start;
         order:-1;
-       
     }
     .logo{
         align-items: center;
@@ -200,6 +198,17 @@ footer {
         order: 1;
     }
     .navActive{
-        transform: translateX(0%);   
+        transform: translateX(0%);       
+    }
+    @keyframes menuFade{
+        from{
+             opacity: 0;
+             transform: translateX(-50px);
+
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
 }
