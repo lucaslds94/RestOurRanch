@@ -44,28 +44,59 @@ header{
     opacity:0.8;
 }
 
-.menuLogin a{  
-    font-weight:300;
-    margin-right:10px;
-    text-decoration:none;
-    font-family: 'Poppins', sans-serif;
-    color:#fff;
+.formBox{
+    position: absolute;
+    text-align:center;
+    right:0px;
+    top: 50px;
+    background-color: #4A7856;
+    height: 80vh;
+    width: 40vw;
+    transform:translateX(100%) ;
+    transition: transform 0.5s ease-in;   
 }
-.menuLogin a:hover{
-    color:#95A3B3;
-    opacity:0.8;
-}
-.botao{
+.buttonBox{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #549666;
     border-radius:30px;
-    padding: 5px 15px;
 }
-.destaque{
-    background-color: #222;
-    color: white;
+
+.toggleBtn{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline: none;
+    position:relative;
+
+}
+#btn{
+    top:0;
+    left:0;
+    position:absolute;
+    width:110px;
+    height:35px;
+    background-color:#84DCC6;
+    border-radius:30px;
+    transition: 0.5s;
+}
+
+.redesSociais{
+    margin:30px auto;
+    text-align:center;
+}
+
+.redesSociais img{
+    width:30px;
+    margin:0 12px;
+    box-shadow: 0 0 20px 0 #84DCC6;
+    cursor:pointer; 
 }
 
 .userIcon{
-    display:none;
+    display:flex;     
 }
 
 .userIcon a img{
@@ -166,15 +197,6 @@ footer {
     grid-area:'footer';
 }
 
-@media (max-width: 900px){
-    .menuLogin{
-        display:none;
-    }
-    .userIcon{
-        display:block;
-    }
-}
-
 @media(max-width:765px){
     body{
         overflow-x: hidden;
@@ -216,10 +238,7 @@ footer {
         display: flex;
         justify-content: center; 
     }
-    .userIcon{
-        display:block;  
-        order: 1;
-    }
+    
 }
 .navActive{
     transform: translateX(0%);       

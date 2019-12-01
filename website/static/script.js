@@ -2,9 +2,16 @@ const navSlide = () => {
     const burger = document.querySelector('.menuIcon');
     const nav = document.querySelector('.menu');
     const menuLinks = document.querySelectorAll('.menu a');
+    const userIcon = document.querySelector('.userIcon');
+    const formBox = document.querySelector('.formBox');
+
     
+    userIcon.addEventListener('click', () => {
+        formBox.classList.toggle('navActive');
+    });
+
     burger.addEventListener('click', () => {
-        // Toggle no burger
+        //Animação do menu
         nav.classList.toggle('navActive');
 
         //Animação dos links
