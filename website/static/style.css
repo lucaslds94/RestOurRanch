@@ -155,11 +155,27 @@ header{
     background-color: green;
     grid-area: 'section2';
 }
-
+/*========= IMAGES FILTER START =========*/
 .section3{
-    background-color: aquamarine;
+    background-color: white;
     grid-area: 'section3';
+    padding: 50px 0;    
+    display: flex;
+    
 }
+
+.filter-img{
+    position: relative;
+    
+}
+
+.filter-img>img{
+    width: 100%
+}
+
+
+/*========== IMAGES FILTER END =========*/
+
 
 footer {
     background-color: green;
