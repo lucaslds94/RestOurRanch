@@ -5,11 +5,6 @@ const navSlide = () => {
     const userIcon = document.querySelector('.userIcon');
     const formBox = document.querySelector('.formBox');
 
-    
-    userIcon.addEventListener('click', () => {
-        formBox.classList.toggle('navActive');
-    });
-
     burger.addEventListener('click', () => {
         //Animação do menu
         nav.classList.toggle('navActive');
@@ -25,6 +20,35 @@ const navSlide = () => {
         //Animação do burger
         burger.classList.toggle('toggle');
     });
+    
+    userIcon.addEventListener('click', () => {
+        formBox.classList.toggle('navActive');
+    });
+ 
 }
 
 navSlide();
+
+const loginSlide = () =>{
+    const x = document.getElementById('login');
+    const y = document.getElementById('registrar');
+    const z = document.getElementById('btn');
+
+    const registroButton = document.querySelector('.registroButton');
+    const loginButton = document.querySelector('.loginButton');
+
+    registroButton.addEventListener('click', ()=>{
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    })
+
+    loginButton.addEventListener('click', ()=>{
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    })
+}
+
+loginSlide();
+
