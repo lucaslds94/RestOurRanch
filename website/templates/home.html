@@ -25,20 +25,44 @@
             <a href="#">Sobre</a>
         </nav>
 
-        <aside class="menuLogin">
-            <a href="#">Login</a>
-            <a class = "botao destaque"href="#">Cadastro</a>
-        </aside>
-
         <div class="menuIcon">
-           <div class="line1"></div>
-           <div class="line2"></div>
-           <div class="line3"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
 
         <aside class="userIcon">
             <a href="#"><img src="{% static '/images/userIcon.png' %}" alt="Ícone de Login"></a>
         </aside>
+
+        <div class="formBox">
+            <div class="buttonBox">
+                <div id="btn"></div>
+                <button type="button" class="toggleBtn loginButton">Login</button>
+                <button type="button" class="toggleBtn registroButton">Registrar</button>
+            </div>
+            <div class="redesSociais">
+                <img src="{% static '/images/facebook.png' %}" alt="">
+                <img src="{% static '/images/twitter.png' %}" alt="">
+                <img src="{% static '/images/instagram.png' %}" alt="">
+            </div>
+            <form id="login" class="inputForm">
+                <input type="text" class="inputField" placeholder="Usuário" required>
+                <input type="password" class="inputField" placeholder="Senha" required>
+                <input type="checkbox" class="checkBox"><span>Lembrar senha</span>
+                <button type="submit" class="submitBtn">Entrar</button>
+            </form>
+            <form id="registrar" class="inputForm">
+                <input type="text" class="inputField" placeholder="Usuário" required>
+                <input type="email" class="inputField" placeholder="Email" required>
+                <input type="password" class="inputField" placeholder="Senha" required>
+                <div class= "divCheck">
+                 <input type="checkbox" class="checkBox"><span>Concordo com os termos de uso.</span>
+                </div>
+                <button type="submit" class="submitBtn">Registrar</button>
+            </form>
+        </div>
+
 
     </header>
 
