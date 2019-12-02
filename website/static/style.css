@@ -240,23 +240,28 @@ span{
     grid-area: 'section2';
 }
 /*========= IMAGES FILTER START =========*/
+/*
 .section3{
     background-color: white;
     grid-area: 'section3';
-    padding: 50px 0;    
     display: flex;
-    
-}
-
-.filter-img{
+    align-items: center;
     position: relative;
-    
+    width: 100%;
+   
 }
 
-.filter-img>img{
-    width: 100%
+.celiac{
+    width: 25%;
 }
 
+.vegan{
+   width: 25%; 
+}
+
+.vegetarian{
+    width: 25%;
+}
 
 /*========== IMAGES FILTER END =========*/
 
