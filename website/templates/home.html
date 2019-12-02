@@ -38,7 +38,7 @@
         <div class="formBox">
             <div class="buttonBox">
                 <div id="btn"></div>
-                <button type="button" class="toggleBtn loginButton" >Login</button>
+                <button type="button" class="toggleBtn loginButton">Login</button>
                 <button type="button" class="toggleBtn registroButton">Registrar</button>
             </div>
             <div class="redesSociais">
@@ -46,19 +46,21 @@
                 <img src="{% static '/images/twitter.png' %}" alt="">
                 <img src="{% static '/images/instagram.png' %}" alt="">
             </div>
-            <form id = "login"class="inputForm">
+            <form id="login" class="inputForm">
                 <input type="text" class="inputField" placeholder="Usuário" required>
                 <input type="password" class="inputField" placeholder="Senha" required>
                 <input type="checkbox" class="checkBox"><span>Lembrar senha</span>
-                <button type="submit" class = "submitBtn">Entrar</button>
+                <button type="submit" class="submitBtn">Entrar</button>
             </form>
-            <form id = "registrar" class="inputForm">
-                    <input type="text" class="inputField" placeholder="Usuário" required>
-                    <input type="email" class="inputField" placeholder="Email" required>
-                    <input type="password" class="inputField" placeholder="Senha" required>
-                    <input type="checkbox" class="checkBox"><span>Concordo com os termos de uso.</span>
-                    <button type="submit" class = "submitBtn">Registrar</button>
-                </form>
+            <form id="registrar" class="inputForm">
+                <input type="text" class="inputField" placeholder="Usuário" required>
+                <input type="email" class="inputField" placeholder="Email" required>
+                <input type="password" class="inputField" placeholder="Senha" required>
+                <div class= "divCheck">
+                 <input type="checkbox" class="checkBox"><span>Concordo com os termos de uso.</span>
+                </div>
+                <button type="submit" class="submitBtn">Registrar</button>
+            </form>
         </div>
 
 
@@ -94,13 +96,15 @@
         <div></div>
         <div></div>
     </section>
-
+    <!--  
     <section class="section3">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="container">
+            <img class="celiac" src="{%static '/images/img-glutenfree-filter.jpg'%}" alt="">
+            <img class="vegan" src="{%static '/images/img-vegan-filter.jpg'%}" alt="">
+            <img class="vegetarian" src="{%static '/images/img-vegetarian-filter.jpg'%}" alt="">
+        </div>
     </section>
-
+    -->  
     <footer>
         <div class="logotipo">
             <img src="..//static/images/logoteste.png" alt="">
