@@ -268,8 +268,43 @@ span{
 
 footer {
     background-color: #57468b;
- 
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
 }
+
+.logotipo img {
+    width: 5%;
+    vertical-align: middle; 
+}
+
+.redes_sociais {
+    width: 100%;
+    text-align: left;
+}
+
+.redes_sociais img {
+    width: 2%;
+}
+
+.redes_sociais ul li{
+    list-style: none;
+    display: inline;
+}
+
+@media only screen and (min-width:450px) and (max-width: 768px) {
+    footer {
+        clear: both;
+        width: 100%
+    }
+    .logotipo {	
+        width: 50%;
+        float: left;
+    }
+}
+
+
   
 
 @media(max-width:765px){
