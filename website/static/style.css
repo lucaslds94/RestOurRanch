@@ -16,7 +16,7 @@ header{
     align-items: center;
     background-color: #4a7856;
     display: flex;
-    grid-area: 'header';
+    grid-area: header;
     justify-content: space-between;
     position:fixed;
     width:100%;
@@ -171,7 +171,7 @@ span{
 }
 
 .section1{
-    grid-area: 'section1';
+    grid-area: section1;
 }
 
 
@@ -237,13 +237,13 @@ span{
 
 .section2{
     background-color: green;
-    grid-area: 'section2';
+    grid-area: section2;
 }
 /*========= IMAGES FILTER START =========*/
-/*
+
 .section3{
     background-color: white;
-    grid-area: 'section3';
+    grid-area: section3;
     display: flex;
     align-items: center;
     position: relative;
@@ -268,7 +268,8 @@ span{
 
 footer {
     background-color: #57468b;
-    position: absolute;
+    grid-area: footer;
+    position: relative;
     bottom: 0px;
     width: 100%;
     color: white;
