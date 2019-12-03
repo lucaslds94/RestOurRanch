@@ -5,16 +5,25 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<style>
+<!-- <style>
     .inputForm{
         height: 800px;
         width: 600px;
     }
-</style>
+    #hint_id_username{
+        display:none;
+    }
+    #hint_id_password1{
+        display:none;
+    }
+    #hint_id_password2{
+        display:none;
+    }
+</style> -->
     <form method = "POST"id="registrar" class="inputForm">
         {% csrf_token %}
         {{ form|crispy }}
         <br>
-        <button type="submit" class="submitBtn">Registrar</button>  
+        <button type="submit" >Registrar</button>  
     </form>
 {% endblock %}
