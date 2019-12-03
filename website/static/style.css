@@ -172,6 +172,7 @@ span{
 
 .section1{
     grid-area: 'section1';
+    
 }
 
 
@@ -272,6 +273,7 @@ footer {
     bottom: 0px;
     width: 100%;
     color: white;
+    grid-area:'footer';
 }
 
 .logotipo img {

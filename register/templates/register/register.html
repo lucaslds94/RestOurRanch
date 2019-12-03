@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block title %} Criar conta {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<style>
+    .inputForm{
+        height: 800px;
+        width: 600px;
+    }
+</style>
+    <form method = "POST"id="registrar" class="inputForm">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <button type="submit" class="submitBtn">Registrar</button>  
+    </form>
+{% endblock %}
