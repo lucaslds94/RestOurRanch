@@ -250,9 +250,7 @@ span{
     width: 100%;
    
 }
-.container{
-    height:100%;
-}
+
 .celiac{
     width: 33%;
 }
@@ -275,7 +273,7 @@ footer {
     bottom: 0px;
     width: 100%;
     color: white;
-    grid-area:'footer';
+    grid-area:footer;
 }
 
 .logotipo img {
