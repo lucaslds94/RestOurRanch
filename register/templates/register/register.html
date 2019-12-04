@@ -1,14 +1,13 @@
-{% extends 'home.html' %}
+{% extends 'cadastro.html' %}
 {% load static %}
 
 {% block title %} Criar conta {% endblock %}
 {% load crispy_forms_tags %}
 
-{% block content %}
-<!-- <style>
-    .inputForm{
-        height: 800px;
-        width: 600px;
+{% block cadastro %}
+<style>
+    .text-muted{
+        display:none;
     }
     #hint_id_username{
         display:none;
@@ -19,7 +18,7 @@
     #hint_id_password2{
         display:none;
     }
-</style> -->
+</style>
     <form method = "POST"id="registrar" class="inputForm">
         {% csrf_token %}
         {{ form|crispy }}

@@ -45,22 +45,22 @@ header{
 }
 
 .formBox{
-    position: absolute;
+    position: relative;
     text-align:center;
-    right:0px;
-    top: 50px;
+    margin:6% auto;
     background-color: #4A7856;
-    height: 90vh;
-    width: 360px;
-    transform:translateX(100%) ;
-    transition: transform 0.5s ease-in;   
-    overflow:hidden;
+    height: 520px;
+    width: 400px;
+    padding: 5px;
+    /* transform:translateX(100%) ;
+    transition: transform 0.5s ease-in;   */
+    overflow:hidden; 
     
 }
 .buttonBox{
     width:220px;
     height:35px;
-    margin:35px auto;
+    margin :35px auto;
     position:relative;
     box-shadow: 0 0 20px 9px #549666;
     border-radius:30px;
@@ -73,6 +73,7 @@ header{
     border:0;
     outline: none;
     position:relative;
+    text-decoration: none;
 
 }
 #btn{
@@ -81,7 +82,7 @@ header{
     position:absolute;
     text-align: center;
     width:110px;
-    height:35px;
+    height:100%;
     background-color:#84DCC6;
     border-radius:30px;
     transition: 0.5s ease-in;
@@ -99,8 +100,6 @@ header{
     cursor:pointer; 
 }
 .inputForm{
-    top:180px;
-    position:absolute;
     width:280px;
     transition:0.5s ease-in;
     justify-content: center;
@@ -140,12 +139,6 @@ span{
     font-size:14px;
     bottom:64px;
     position:absolute;
-}
-#login{
-    left:50px;
-}
-#registrar{
-    left:450px;
 }
 
 .userIcon{
@@ -309,7 +302,7 @@ footer {
 
   
 
-@media(max-width:765px){
+@media(max-width:925px){
     body{
         overflow-x: hidden;
     }
@@ -332,7 +325,7 @@ footer {
         flex-grow:none;
         justify-content: space-around;
         width: 50%;
-        transform:translateX(-400px) ;
+        transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
     }
     .menu a{
