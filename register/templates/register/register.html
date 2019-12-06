@@ -18,6 +18,13 @@
     #hint_id_password2{
         display:none;
     }
+    body{
+        height:100%;
+        width:100%;
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/static/images/backgroundLogin.jpg');
+        background-size: cover;
+        position: absolute;
+    }
 </style>
     <form method = "POST"id="registrar" class="inputForm">
         {% csrf_token %}
