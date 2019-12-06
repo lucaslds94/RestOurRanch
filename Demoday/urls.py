@@ -23,4 +23,5 @@ urlpatterns = [
     path('cadastro/',views.cadastro),
     path('register/', v.register, name = "register" ),
     path('', include("django.contrib.auth.urls")),
+    path('recomendacoes', views.recomendacoes),
 ]
