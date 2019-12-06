@@ -182,34 +182,61 @@ span{
     height: auto;
     top: 50px;
 }
-
-
-
-/*========= IMAGES FILTER START =========*/
+/* IMAGES FILTER START*/
 
 .section2{
-    background-color: white;
     grid-area: section2;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+}
+.veggie-img{
     position: relative;
+    margin-bottom: 15px;
+}
+
+.veggie-img img{
     width: 100%;
-    
 }
 
-.celiac{
-    width: 33%;
+.btn-veggie{
+    width: 150px;
+    padding: 10px 0;
+    outline: none !important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background: white;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    transition: .6s;
+    opacity: 0;
+    z-index: 1;
 }
 
-.vegan{
-    width: 33%; 
+.veggie-img:hover .btn-veggie{
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    opacity: 1;
 }
 
-.veggie{
-    width: 33%;
+.overlay{
+    height: 0%;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 0;
+    opacity: .0;
+    transition: .5s;
 }
 
-/*========== IMAGES FILTER END =========*/
+.veggie-img:hover .overlay{
+    opacity: .5;
+    height: 100%;
+}
+
+/* IMAGES FILTER END*/
 
 .section3{
     background-color: green;
