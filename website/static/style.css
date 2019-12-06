@@ -177,65 +177,9 @@ span{
     grid-area: section1;
 }
 
-
-.banner{
-    display: block;
-    height: 300px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.banner li{
-    list-style: none;
-    position: absolute;
-}
-
-.banner img{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.banner input{
-    display: none;
-}
-
-.banner label{
-    background-color: black;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.banner li:nth-child(1) label{
-    left: 10px;
-}
-
-.banner li:nth-child(2) label{
-    left: 40px;
-}
-
-.banner li:nth-child(3) label{
-    left: 70px;
-}
-
-.banner li:nth-child(4) label{
-    left: 100px;
-}
-
-.banner li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+.carousel-inner img{
+    width: 100vh;
+    height: 300vh;
 }
 
 /*========= IMAGES FILTER START =========*/
