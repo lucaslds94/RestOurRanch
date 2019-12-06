@@ -100,11 +100,15 @@ header{
     cursor:pointer; 
 }
 .inputForm{
-    width:280px;
+    width:100%;
     transition:0.5s ease-in;
-    justify-content: center;
+    /* justify-content: center; */
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
 }
-.inputField{
+#id_username, #id_password,#id_email,#id_password1,#id_password2{
     width:100%;
     padding:10px 0;
     margin:5px 0;
@@ -114,6 +118,8 @@ header{
     border-bottom:1px solid #999;
     outline:none;
     background:transparent;
+    display:flex;
+    justify-content: center;
     
 }
 ::placeholder{
@@ -132,6 +138,10 @@ header{
 }
 .checkBox{
     margin:35px 10px 30px 0;
+}
+
+.asteriskField{
+    display:none;
 }
 
 span{

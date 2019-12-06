@@ -21,34 +21,34 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
     
-    userIcon.addEventListener('click', () => {
-        formBox.classList.toggle('navActive');
-    });
+    // userIcon.addEventListener('click', () => {
+    //     formBox.classList.toggle('navActive');
+    // });
  
 }
 
 navSlide();
 
-// const loginSlide = () =>{
-//     // const x = document.getElementById('login');
-//     // const y = document.getElementById('registrar');
-//     const z = document.getElementById('btn');
+const loginSlide = () =>{
+    // const x = document.getElementById('login');
+    // const y = document.getElementById('registrar');
+    const z = document.getElementById('btn');
 
-//     const registroButton = document.querySelector('.registroButton');
-//     const loginButton = document.querySelector('.loginButton');
+    const registroButton = document.querySelector('.registroButton');
+    const loginButton = document.querySelector('.loginButton');
 
-//     registroButton.addEventListener('click', ()=>{
-//         // x.style.left = "-400px";
-//         // y.style.left = "50px";
-//         z.style.left = "110px";
-//     })
+    registroButton.addEventListener('click', ()=>{
+        // x.style.left = "-400px";
+        // y.style.left = "50px";
+        z.style.left = "110px";
+    })
 
-//     loginButton.addEventListener('click', ()=>{
-//         // x.style.left = "50px";
-//         // y.style.left = "450px";
-//         z.style.left = "0px";
-//     })
-// }
+    loginButton.addEventListener('click', ()=>{
+        // x.style.left = "50px";
+        // y.style.left = "450px";
+        z.style.left = "0px";
+    })
+}
 
-// loginSlide();
+loginSlide();
 
