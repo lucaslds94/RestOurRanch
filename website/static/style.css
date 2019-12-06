@@ -8,7 +8,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 50px 580px 300px 360px 150px ;                           
+    grid-template-rows: 7vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
 }
 
@@ -20,6 +20,8 @@ body{
     justify-content: space-between;
     position:fixed;
     width:100%;
+    height: 5vh;
+    z-index: 1;
 }
 
 .logo{
@@ -181,15 +183,19 @@ span{
 #banner{
     width: 100%;
     height: auto;
-    top: 50px;
 }
 /* IMAGES FILTER START*/
 
 .section2{
     grid-area: section2;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.section2 > div{
+    width: 90%;
 }
 .veggie-img{
     position: relative;
@@ -285,7 +291,7 @@ footer {
 }
   
 
-@media(max-width:925px){
+@media(max-width:767px){
     body{
         overflow-x: hidden;
     }
@@ -351,3 +357,17 @@ footer {
     transform:rotate(45deg)translate(-5px,-6px)
 }
 
+@media (min-width:768px){
+    
+    body{
+        grid-template-rows: 4vh 100vh 42vh 35vh 20vh ;
+    }
+    
+    .section2{
+        flex-direction: row;
+    }
+    
+    .section2 > div{
+        width: 30%;
+    }
+}
