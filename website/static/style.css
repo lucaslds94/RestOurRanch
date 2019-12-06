@@ -8,7 +8,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 50px 400px 300px 360px 150px ;                           
+    grid-template-rows: 50px 580px 300px 360px 150px ;                           
     margin:0;
 }
 
@@ -177,10 +177,13 @@ span{
     grid-area: section1;
 }
 
-.carousel-inner img{
-    width: 100vh;
-    height: 300vh;
+#banner{
+    width: 100%;
+    height: auto;
+    top: 50px;
 }
+
+
 
 /*========= IMAGES FILTER START =========*/
 
@@ -252,8 +255,6 @@ footer {
         float: left;
     }
 }
-
-
   
 
 @media(max-width:925px){
