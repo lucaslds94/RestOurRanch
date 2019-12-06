@@ -12,7 +12,7 @@ body{
     margin:0;
 }
 
-header{
+#header{
     align-items: center;
     background-color: #4a7856;
     display: flex;
@@ -45,30 +45,29 @@ header{
 }
 
 .formBox{
+    top:100px;
     position: relative;
     text-align:center;
     margin:6% auto;
     background-color: #4A7856;
-    height: 520px;
+    height: 600px;
     width: 400px;
     padding: 5px;
-    /* transform:translateX(100%) ;
-    transition: transform 0.5s ease-in;   */
+   
     overflow:hidden; 
     
 }
 .buttonBox{
-    width:220px;
-    height:35px;
-    margin :35px auto;
-    position:relative;
-    box-shadow: 0 0 20px 9px #549666;
-    border-radius:30px;
+    position:absolute;
+    top:50px;
+    right:0;
+    transform:translateX(100%) ;
+    transition: transform 0.5s ease-in;  
 }
 
 .toggleBtn{
     padding:10px 30px;
-    cursor:pointer;
+   
     background:transparent;
     border:0;
     outline: none;
@@ -76,7 +75,7 @@ header{
     text-decoration: none;
 
 }
-#btn{
+/* #btn{
     top:0;
     left:0;
     position:absolute;
@@ -86,7 +85,7 @@ header{
     background-color:#84DCC6;
     border-radius:30px;
     transition: 0.5s ease-in;
-}
+} */
 
 .redesSociais{
     margin:30px auto;
@@ -100,6 +99,7 @@ header{
     cursor:pointer; 
 }
 .inputForm{
+    top:50px;
     width:100%;
     transition:0.5s ease-in;
     /* justify-content: center; */
@@ -152,12 +152,14 @@ span{
 }
 
 .userIcon{
-    display:flex;     
+    display:flex;  
+    cursor:pointer;   
 }
 
-.userIcon a img{
+.userIcon img{
     height: 40px;
     margin-right: 20px;
+    
 }
 
 .menuIcon{

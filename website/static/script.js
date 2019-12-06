@@ -2,8 +2,6 @@ const navSlide = () => {
     const burger = document.querySelector('.menuIcon');
     const nav = document.querySelector('.menu');
     const menuLinks = document.querySelectorAll('.menu a');
-    const userIcon = document.querySelector('.userIcon');
-    const formBox = document.querySelector('.formBox');
 
     burger.addEventListener('click', () => {
         //Animação do menu
@@ -20,33 +18,16 @@ const navSlide = () => {
         //Animação do burger
         burger.classList.toggle('toggle');
     });
-    
-    // userIcon.addEventListener('click', () => {
-    //     formBox.classList.toggle('navActive');
-    // });
- 
 }
 
 navSlide();
 
 const loginSlide = () =>{
-    // const x = document.getElementById('login');
-    // const y = document.getElementById('registrar');
-    const z = document.getElementById('btn');
+    const buttonBox = document.querySelector('.buttonBox');
+    const userIcon = document.querySelector('.userIcon img');
 
-    const registroButton = document.querySelector('.registroButton');
-    const loginButton = document.querySelector('.loginButton');
-
-    registroButton.addEventListener('click', ()=>{
-        // x.style.left = "-400px";
-        // y.style.left = "50px";
-        z.style.left = "110px";
-    })
-
-    loginButton.addEventListener('click', ()=>{
-        // x.style.left = "50px";
-        // y.style.left = "450px";
-        z.style.left = "0px";
+    userIcon.addEventListener('click', ()=>{
+        buttonBox.classList.toggle('navActive')
     })
 }
 
