@@ -178,6 +178,7 @@ span{
     transition: all 0.3s ease;
 }
 
+/* BANNER START */
 .section1{
     grid-area: section1;
 }
@@ -186,6 +187,8 @@ span{
     width: 100%;
     height: auto;
 }
+/* BANNER END */
+
 /* IMAGES FILTER START*/
 
 .section2{
