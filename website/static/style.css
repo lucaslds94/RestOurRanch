@@ -382,6 +382,11 @@ footer {
 .navActive{
     transform: translateX(20%);       
 }
+
+.burgerActive{
+    transform: translateX(0%);       
+}
+
 @keyframes menuFade{
     from{
         opacity: 0;
