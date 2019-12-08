@@ -6,30 +6,36 @@
 
 {% block cadastro %}
 <style>
-    .text-muted{
-        display:none;
+    .text-muted {
+        display: none;
     }
-    #hint_id_username{
-        display:none;
+
+    #hint_id_username {
+        display: none;
     }
-    #hint_id_password1{
-        display:none;
+
+    #hint_id_password1 {
+        display: none;
     }
-    #hint_id_password2{
-        display:none;
+
+    #hint_id_password2 {
+        display: none;
     }
-    body{
-        height:100%;
-        width:100%;
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/static/images/backgroundLogin.jpg');
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/static/images/backgroundLogin.jpg');
         background-size: cover;
         position: absolute;
     }
 </style>
-    <form method = "POST"id="registrar" class="inputForm">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <br>
-        <button class = "submitBtn"type="submit" >Registrar</button>  
-    </form>
+<form method="POST" id="registrar" class="inputForm">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <br>
+</form>
+<div class="divAux">
+    <button class="toggleBtn2" type="submit">Registrar</button>
+</div>
 {% endblock %}
