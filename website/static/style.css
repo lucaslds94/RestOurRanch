@@ -43,6 +43,7 @@ body{
 .menu a:hover{
     color:#95A3B3;
     opacity:0.8;
+    text-decoration: none;
 }
 
 .formBox{
@@ -196,13 +197,33 @@ span{
 
 .userIcon{
     display:flex;  
-    cursor:pointer;   
+    align-items: center; 
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .userIcon img{
+    cursor:pointer;  
     height: 40px;
-    margin-right: 20px;
-    
+    margin-right: 5px; 
+}
+
+.userIcon p {
+
+    height: 100%;
+    display: flex;
+    margin:0;
+}
+
+.linkLogout{
+    text-decoration:none;
+    color:#fff;
+}
+
+.linkLogout:hover{
+    text-decoration: none;
+    color:#95A3B3;
+    opacity:0.8;
 }
 
 .menuIcon{
@@ -219,8 +240,7 @@ span{
 }
 
 .section1{
-    grid-area: section1;
-    
+    grid-area: section1;  
 }
 
 #banner{
@@ -331,7 +351,7 @@ footer {
 }
   
 
-@media(max-width:925px){
+@media(max-width:1000px){
     body{
         overflow-x: hidden;
     }
@@ -378,7 +398,11 @@ footer {
         justify-content: center; 
     }
     
+    .userIcon{
+        flex-grow: 0;
+    }
 }
+
 .navActive{
     transform: translateX(20%);       
 }

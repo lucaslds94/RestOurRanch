@@ -38,12 +38,13 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        {% if user.is_authenticated %}
-        <p>Bem-vindo(a), {{user}}</p>
-        <a href="/logout">Logout</a>
-        {% endif %}
+        
 
-        <aside class="userIcon">
+        <aside class="userIcon">  
+        {% if user.is_authenticated %}
+        <p>Bem-vindo(a), {{user}}.</p>
+        <a class = "linkLogout"href="/logout">Logout</a>
+        {% endif %}
             <img src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
         </aside>
         <div class ="buttonBox">
