@@ -378,6 +378,7 @@ footer {
         width: 50%;
         transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
+        opacity:0;
     }
     
     .menu a{
@@ -408,7 +409,8 @@ footer {
 }
 
 .burgerActive{
-    transform: translateX(0%);       
+    transform: translateX(0%);     
+    opacity: 1;  
 }
 
 @keyframes menuFade{
