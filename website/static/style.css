@@ -259,9 +259,32 @@ span{
 /* IMAGES FILTER END*/
 
 .section3{
-    background-color: green;
+    display: flex;
+        background-color: rgb(166, 168, 166);
     grid-area: section3;
+    color: #fff;
+    padding: 10px;
 }
+
+.aboutus {
+image-
+padding: 20px;
+margin: 10 auto;
+text-align: center;
+}
+
+h2.aboutus {
+font-size: 8px;
+}
+
+.aboutusicon {
+height: 5%;
+width: 5%;
+
+}
+
+
+
 
 footer {
     background-color: #57468b;
