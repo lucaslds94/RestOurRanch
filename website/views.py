@@ -6,3 +6,6 @@ def home(request):
 
 def cadastro(request):
     return render(request,'cadastro.html')
+
+def restaurantes(request):
+    return render(request, 'restaurantes.html')
