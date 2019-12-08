@@ -48,6 +48,7 @@ body{
 
 .formBox{
     background-color: #4A7856;
+    border-radius:30px;
     height: 600px;
     margin:6% auto;
     opacity: 0.9;
@@ -143,6 +144,9 @@ body{
     width:30px;
 }
 
+.redesSociais img:hover{
+    opacity:.5;
+}
 .inputForm{
     top:50px;
     width:100%;
@@ -162,7 +166,7 @@ body{
     outline:none;
     background:transparent;
     display:flex;
-    justify-content: center;   
+    justify-content: center;     
 }
 
 ::placeholder{
@@ -218,7 +222,6 @@ body{
     opacity:.5s;
     filter:blur(30px);
     transform:translateX(-130px) sewX(-15deg);
-
 }
 
 .toggleBtn2:after{
@@ -277,11 +280,10 @@ span{
 }
 
 .userIcon img:hover{
-    opacity: .8;
+    opacity: .4;
 }
 
 .userIcon p {
-
     height: 100%;
     display: flex;
     margin:0;
@@ -320,6 +322,7 @@ span{
     height: auto;
     top: 50px;
 }
+
 /* IMAGES FILTER START*/
 
 .section2{
