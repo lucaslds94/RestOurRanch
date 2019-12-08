@@ -61,14 +61,14 @@ body{
 .buttonBox{
     position:absolute;
     right:0;
-    top:50px;
-    transform:translateX(100%) ;
+    top:75px;
+    transform:translateX(130%) ;
     transition: transform 0.5s ease-in;  
 }
 
 .toggleBtn{
-    background:none;
-    color:#ccc;
+    background:#ccc;
+    columns: #222222;;
     width: 120px;
     height:40px;
     border: 1px solid #338033;
@@ -76,6 +76,8 @@ body{
     border-radius:4px;
     transition: .6s;
     overflow:hidden;
+    transform:translate(-50%,-50%);
+    
 }
 
 .toggleBtn:focus{
@@ -378,7 +380,7 @@ footer {
     
 }
 .navActive{
-    transform: translateX(0%);       
+    transform: translateX(20%);       
 }
 @keyframes menuFade{
     from{
