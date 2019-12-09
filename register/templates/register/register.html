@@ -27,8 +27,21 @@
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/static/images/backgroundLogin.jpg');
         background-size: cover;
-        position: absolute;
+        position: absolute;  
     }
+
+    .formBox{
+        background-color: #4A7856;
+        border-radius:30px;
+        height: 90vh;
+        margin:6% auto;
+        opacity: 0.9;
+        overflow:hidden; 
+        padding: 5px;
+        position: relative;
+        text-align:center;
+        top:8vh;
+        width: 98vw;
 </style>
 <form method="POST" id="registrar" class="inputForm">
     {% csrf_token %}

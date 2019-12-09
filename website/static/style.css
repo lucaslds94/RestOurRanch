@@ -10,7 +10,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 7vh 30vh 110vh 35vh 20vh ;                           
+    grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
 }
 
@@ -22,7 +22,6 @@ body{
     justify-content: space-between;
     position:fixed;
     width:100%;
-    height: 7vh;
     z-index: 1;
 }
 
@@ -280,7 +279,7 @@ span{
 
 .userIcon img{
     cursor:pointer;  
-    height: 40px;
+    height: 5vh;
     margin-right: 5px; 
 }
 
@@ -454,7 +453,6 @@ footer {
     header{
         display:flex;
         justify-content: space-between;
-        height:50px;
         position: fixed;
         width: 100%;
     }
@@ -471,7 +469,7 @@ footer {
         justify-content: space-around;
         position: absolute;
         left:0px;
-        top: 7vh;
+        top: 5vh;
         transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
         opacity:0;
@@ -486,6 +484,8 @@ footer {
         opacity: 0;
         width:80%;
         justify-content:center;
+        align-items:center;
+        height:40px;
     }
 
     .menu a:hover{
@@ -545,9 +545,7 @@ footer {
 }
 
 @media (min-width:768px){
-    #header{
-        height: 5vh;
-    }
+    
     body{
         grid-template-rows: 4vh 100vh 42vh 35vh 20vh ;
     }
@@ -559,4 +557,10 @@ footer {
     .section2 > div{
         width: 30%;
     }
+
+    .menu{
+        top:4vh;
+    }
+
+
 }
