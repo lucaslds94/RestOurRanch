@@ -43,13 +43,15 @@
         top:8vh;
         width: 90vw;
     }
+}
+
 </style>
 <form method="POST" id="registrar" class="inputForm">
     {% csrf_token %}
     {{ form|crispy }}
     <br>
+    <div class="divAux">
+        <button class="toggleBtn2" type="submit">Registrar</button>
+    </div>
 </form>
-<div class="divAux">
-    <button class="toggleBtn2" type="submit">Registrar</button>
-</div>
 {% endblock %}

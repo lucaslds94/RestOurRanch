@@ -34,8 +34,8 @@
     {% csrf_token %}
     {{ form|crispy }}
     <br>
+    <div class="divAux">
+        <button class="toggleBtn2" type="submit">Entrar</button>
+    </div>
 </form>
-<div class="divAux">
-    <button class="toggleBtn2" type="submit">Entrar</button>
-</div>
 {% endblock %}
