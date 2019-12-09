@@ -173,6 +173,10 @@ body{
     justify-content: center;     
 }
 
+.requiredField, .textInput{
+    opacity:1;
+}
+
 ::placeholder{
     color:#222;
 }

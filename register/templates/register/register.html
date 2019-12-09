@@ -29,7 +29,7 @@
         background-size: cover;
         position: absolute;  
     }
-
+@media(max-width:768px){
     .formBox{
         background-color: #4A7856;
         border-radius:30px;
@@ -41,7 +41,8 @@
         position: relative;
         text-align:center;
         top:8vh;
-        width: 98vw;
+        width: 90vw;
+    }
 </style>
 <form method="POST" id="registrar" class="inputForm">
     {% csrf_token %}
