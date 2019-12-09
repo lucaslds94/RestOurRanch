@@ -101,7 +101,6 @@ body{
     opacity:.5s;
     filter:blur(30px);
     transform:translateX(-130px) sewX(-15deg);
-
 }
 
 .toggleBtn:after{
@@ -133,6 +132,10 @@ body{
     transform:translateX(300px) skewX(-15deg);
     opacity:1;
     transition:.7;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    z-index:0;
 }
 
 .redesSociais{
