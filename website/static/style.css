@@ -83,8 +83,6 @@ body{
     transition: .6s;
     overflow:hidden;
     transform:translate(-50%,-50%);
-    
-    
 }
 
 .toggleBtn:focus{
@@ -412,7 +410,6 @@ footer {
     bottom: 0px;
     width: 100%;
     color: white;
-    grid-area:footer;
 }
 
 .logotipo img {
