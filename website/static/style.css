@@ -10,7 +10,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 7vh 30vh 110vh 35vh 20vh ;                           
+    grid-template-rows: 7vh 22vh 110vh 73vh 20vh ;                           
     margin:0;
 }
 
@@ -320,6 +320,7 @@ span{
 /* BANNER START */
 .section1{
     grid-area: section1;  
+    background-color: #fc4a1a;
 }
 
 #banner{
@@ -400,42 +401,45 @@ span{
 
 /* IMAGES FILTER END*/
 
+/* ABOUT US*/
+
 .section3{
     display: flex;
-        background-color: rgb(166, 168, 166);
+    flex-direction: column;
+    background-color: rgb(166, 168, 166);
     grid-area: section3;
     color: #fff;
     padding: 10px;
 }
 
 .aboutus {
-image-
-padding: 20px;
-margin: 10 auto;
-text-align: center;
+
+    padding: 20px;
+    margin: 10 auto;
+    text-align: center;
 }
 
 h2.aboutus {
-font-size: 8px;
+    font-size: 8px;
 }
 
 .aboutusicon {
-height: 5%;
-width: 5%;
+    height: 5%;
+    width: 5%;
 
 }
 
+/* ABOUT US END*/
 
 
 
 footer {
-    background-color: #57468b;
+    background-color: #f7b733;
     grid-area: footer;
     position: relative;
     bottom: 0px;
     width: 100%;
     color: white;
-    grid-area:footer;
 }
 
 .logotipo img {
@@ -559,7 +563,7 @@ footer {
         height: 5vh;
     }
     body{
-        grid-template-rows: 4vh 100vh 42vh 35vh 20vh ;
+        grid-template-rows: 4vh 99vh 42vh 35vh 20vh ;
     }
     
     .section2{
@@ -568,5 +572,9 @@ footer {
     
     .section2 > div{
         width: 30%;
+    }
+
+    .section3{
+        flex-direction: row;
     }
 }
