@@ -9,4 +9,13 @@ def cadastro(request):
     return render(request,'cadastro.html')
 
 def restaurantes(request):
-    return render(request, 'restaurantes.html')
+
+    lista_restaurantes = Restaurante.objects.all()
+    context = {
+        'restaurantes': lista_restaurantes
+    }
+
+    return render(request, 'restaurantes.html', context)
+
+def reviews(request):
+    review_list = Restaurante.objects.all()
