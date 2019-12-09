@@ -10,11 +10,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-<<<<<<< HEAD
     grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
-=======
-    grid-template-rows: 7vh 22vh 110vh 73vh 20vh ;                           
->>>>>>> bebec7e5adb4fa89a98f4b315dd0dba2e973a894
     margin:0;
 }
 
@@ -594,15 +590,7 @@ footer {
         width: 30%;
     }
 
-<<<<<<< HEAD
-    .menu{
-        top:4vh;
-    }
-
-
-=======
     .section3{
         flex-direction: row;
     }
->>>>>>> bebec7e5adb4fa89a98f4b315dd0dba2e973a894
 }
