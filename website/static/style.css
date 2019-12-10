@@ -40,7 +40,7 @@ body{
 }
 
 .menu a{  
-    
+    font-size:1.2em;
     font-weight:500;
     margin:0px 30px;
     text-decoration: none;
@@ -51,6 +51,11 @@ body{
     color:#95A3B3;
     opacity:0.8;
     text-decoration: none;
+}
+
+.bemVindo p{
+    top:8vh;
+    background-color:tomato;
 }
 
 .socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
@@ -78,7 +83,7 @@ body{
 .buttonBox{
     position:absolute;
     right:0;
-    top:75px;
+    top:85px;
     transform:translateX(130%) ;
     transition: transform 0.5s ease-in;  
 }
@@ -292,13 +297,13 @@ span{
     display:flex;  
     align-items: center; 
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .userIcon img{
     cursor:pointer;  
-    height: 8vh;
-    margin-right: 5px; 
+    height: 6vh;
+   
 }
 
 .userIcon img:hover{
@@ -306,14 +311,19 @@ span{
 }
 
 .userIcon p {
-    height: 100%;
+    height: 70%;
     display: flex;
-    margin:0;
+    margin-top: 10px;
+    margin-right:5px;
+    font-size:0.8em;
+    font-weight: 600;
+    align-items: center;
 }
 
 .linkLogout{
     text-decoration:none;
     color:#fff;
+    margin: 0 7px;
 }
 
 .linkLogout:hover{
@@ -519,7 +529,7 @@ footer {
         transition: transform 0.5s ease-in;   
         opacity:0;
         z-index:3;
-        width: 50%;
+        width: 60%;
     }
     
     .menu a{
