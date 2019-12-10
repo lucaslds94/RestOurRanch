@@ -10,7 +10,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 9vh 40vh 110vh 35vh 20vh ;                           
+    grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
 }
@@ -315,9 +315,9 @@ span{
     display: flex;
     margin-top: 10px;
     margin-right:5px;
-    font-size:0.8em;
-    font-weight: 600;
+    font-size:0.9em;
     align-items: center;
+    color:#fff;
 }
 
 .linkLogout{
@@ -430,6 +430,7 @@ span{
 
 .sec2Title{
     display:none;
+    color:#fff;
 }
 
 /* IMAGES FILTER END*/

@@ -52,17 +52,17 @@
 
             {% endif %}
             <img src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
+            <div class="bemVindo">
+                {% if user.is_authenticated %}
+                <a class="linkLogout" href="/logout">Logout</a>
+                {% endif %}
+            </div>
         </aside>
         <div class="buttonBox">
             <button type="button" onclick="window.location.href = '/login';"
                 class="toggleBtn loginButton">Login</button>
             <button type="button" onclick="window.location.href = '/register';"
                 class="toggleBtn registroButton">Registrar</button>
-        </div>
-        <div class="bemVindo">
-            {% if user.is_authenticated %}
-            <a class="linkLogout" href="/logout">Logout</a>
-            {% endif %}
         </div>
     </header>
 
