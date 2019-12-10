@@ -28,8 +28,8 @@ class Review(models.Model):
         (4, '4'),
         (5, '5'),
     )
-    restaurantes = models.ForeignKey(Restaurante, on_delete=models.CASCADE)
-    pub_date = models.DateTimeField('data publicada')
+    restaurantes = models.ForeignKey(Restaurante, null=True, blank= True, on_delete=models.CASCADE)
+    pub_date = models.DateTimeField(auto_now_add=True, blank=True)
     usuario = models.CharField(max_length=100)
     comment = models.CharField(max_length=200)
     rating = models.IntegerField(choices=RATING_CHOICES)
