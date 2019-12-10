@@ -456,26 +456,29 @@ footer {
     bottom: 0px;
     width: 100%;
     color: white;
+
+
+.fale_aqui {
+    font: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 64px 0px 16px;   
 }
 
-.logotipo img {
-    width: 5%;
-    vertical-align: middle; 
+.outros_contatos {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 32px;
+    font-size: 14vw;
+
 }
 
-.redes_sociais {
-    width: 100%;
-    text-align: left;
+.h5 {
+    color: #FDB813;
+    font-family: 'Roboto', sans-serif;
+    font: 12px;
+    margin: 0px 0px 8px;
 }
 
-.redes_sociais img {
-    width: 2%;
-}
 
-.redes_sociais ul li{
-    list-style: none;
-    display: inline;
-}
 
 @media only screen and (min-width:450px) and (max-width: 768px) {
     footer {
