@@ -3,7 +3,13 @@
 {% block content%}
 
 <h1> RESTAURANTES </h1>
-{%for %}
-
-
+{% for Restaurante in restaurantes %}
+    <h2>{{Restaurante.nome}}</h2>
+    <img src="{% static '/images/{{Restaurante.nome}}.jpg' %}" alt="">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{review_form}}
+        <button>Submit!</button>
+    </form>
+{% endfor %}
 {% endblock %}
