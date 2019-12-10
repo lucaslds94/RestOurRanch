@@ -33,3 +33,6 @@ class Review(models.Model):
     usuario = models.CharField(max_length=100)
     comment = models.CharField(max_length=200)
     rating = models.IntegerField(choices=RATING_CHOICES)
+
+    def __str__(self):
+        return self.restaurantes

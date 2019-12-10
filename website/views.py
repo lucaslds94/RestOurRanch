@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from website.models import *
+from website.forms import *
 
 # Create your views here.
 def home(request):
@@ -8,11 +9,25 @@ def home(request):
 def cadastro(request):
     return render(request,'cadastro.html')
 
-def restaurantes(request):
-
+# def restaurantes(request, categoriaEntry=""):
+#     review_form = Review_form(request.POST or None)
+#     if review_form.is_valid():
+#         review_form.save()
+#         context = {
+#             'msg': "Obrigada!!"
+#         }
+        
+    if categoriaEntry:
+        lista_restaurantes = Restaurante.objects.filter(categoria=categoriaEntry)
+        context = {
+            'restaurantes': lista_restaurantes,
+            'review_form': review_form
+        }
+        return render(request, 'restaurantes.html', context)
     lista_restaurantes = Restaurante.objects.all()
     context = {
-        'restaurantes': lista_restaurantes
+        'restaurantes': lista_restaurantes,
+        'review_form': review_form,
     }
 
     return render(request, 'restaurantes.html', context)
