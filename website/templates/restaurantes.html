@@ -5,7 +5,7 @@
 <h1> RESTAURANTES </h1>
 {% for Restaurante in restaurantes %}
     <h2>{{Restaurante.nome}}</h2>
-    <img src="{% static '/images/{{Restaurante.nome}}.jpg' %}" alt="">
+    <img src="{% static '/images-restaurantes/{{Restaurante.nome}}.jpg' %}" alt="">
     <form action="" method="post">
         {% csrf_token %}
         {{review_form}}
