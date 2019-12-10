@@ -24,11 +24,11 @@ body{
     width:100%;
     z-index: 1;
 }
-
+/*
 .block-content{
     margin-top: 50px;
 }
-
+*/
 .logo{
     background-color: lightgray;
     width: 100px;
@@ -585,11 +585,11 @@ footer {
     body{
         grid-template-rows: 4vh 99vh 42vh 35vh 20vh ;
     }
-    
+    /*
     .block-content{
-        margin-top: 55px;
+        margin-top: 50px;
     }
-
+    */
     .section2{
         flex-direction: row;
     }
