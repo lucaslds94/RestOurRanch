@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from website.models import *
-from website.forms import *
+from .forms import Review_form
+import datetime
 
 # Create your views here.
 def home(request):
@@ -11,12 +12,10 @@ def cadastro(request):
 
 def restaurantes(request, categoriaEntry=""):
     review_form = Review_form(request.POST or None)
-#     if review_form.is_valid():
-#         review_form.save()
-#         context = {
-#             'msg': "Obrigada!!"
-#         }
-        
+    if review_form.is_valid():
+       review_form.save()
+       return render(request)
+
     if categoriaEntry:
         lista_restaurantes = Restaurante.objects.filter(categoria=categoriaEntry)
         context = {
