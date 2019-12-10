@@ -9,8 +9,8 @@ def home(request):
 def cadastro(request):
     return render(request,'cadastro.html')
 
-# def restaurantes(request, categoriaEntry=""):
-#     review_form = Review_form(request.POST or None)
+def restaurantes(request, categoriaEntry=""):
+    review_form = Review_form(request.POST or None)
 #     if review_form.is_valid():
 #         review_form.save()
 #         context = {
