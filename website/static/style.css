@@ -12,6 +12,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
+    font-family: 'Neucha', cursive;
 }
 
 #header{
@@ -43,7 +44,6 @@ body{
     font-weight:500;
     margin:0px 30px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     color:#fff;
 }
 
@@ -53,7 +53,10 @@ body{
     text-decoration: none;
 }
 
-.houseImg,.fruitImg,.messageImg,.teamImg{
+.socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
+    display:none;
+}
+.houseImg,.fruitImg,.messageImg,.teamImg,.socialMedia{
     height:100%;
     margin-right:10px;
 }
@@ -536,6 +539,10 @@ footer {
         display:block;
         margin-left: 15px;
         order:-1;
+    }
+
+    .socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
+         display:block;
     }
 
     .logo{
