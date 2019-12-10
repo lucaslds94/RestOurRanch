@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
         <script defer src="{% static 'script.js' %}"></script>
         <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>RestOurRanch</title>
@@ -25,12 +25,18 @@
         <div class="logo">
             <p>Logo</p>
         </div>
-
+<img src="" alt="">
         <nav class="menu ">
-            <a href="/">Inicio</a>
-            <a href="#rec">Restaurantes</a>
-            <a href="#">Comunidade</a>
-            <a href="#sobre">Sobre</a>
+            <a href="/">
+                <img class = "socialMedia" src="{% static '/images/facebook.png' %}" alt="">
+                <img class = "socialMedia" src="{% static '/images/instagram.png' %}" alt="">
+                <img class = "socialMedia" src="{% static '/images/youtube.png' %}" alt="">
+                <img class = "socialMedia" src="{% static '/images/twitter.png' %}" alt="">
+            </a>
+            <a href="/"><img class = "houseImg" src="{% static '/images/house.png' %}" alt="">Inicio</a>
+            <a href="#rec"><img class = "fruitImg" src="{% static '/images/fruit.png' %}" alt="">Restaurantes</a>
+            <a href="#"><img class = "messageImg" src="{% static '/images/message.png' %}" alt="">Comunidade</a>
+            <a href="#sobre"><img class = "teamImg" src="{% static '/images/team.png' %}" alt="">Sobre</a>
         </nav>
 
         <div class="menuIcon">
@@ -44,7 +50,7 @@
         <p>Bem-vindo(a), {{user}}.</p>
         <a class = "linkLogout"href="/logout">Logout</a>
         {% endif %}
-            <img class= "" src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
+            <img src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
         </aside>
         <div class ="buttonBox">
             <button type="button" onclick="window.location.href = '/login';" class="toggleBtn loginButton">Login</button>

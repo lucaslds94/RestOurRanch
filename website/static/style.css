@@ -12,6 +12,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
+    font-family: 'Neucha', cursive;
 }
 
 #header{
@@ -43,7 +44,6 @@ body{
     font-weight:500;
     margin:0px 30px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     color:#fff;
 }
 
@@ -51,6 +51,14 @@ body{
     color:#95A3B3;
     opacity:0.8;
     text-decoration: none;
+}
+
+.socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
+    display:none;
+}
+.houseImg,.fruitImg,.messageImg,.teamImg,.socialMedia{
+    height:100%;
+    margin-right:10px;
 }
 
 .formBox{
@@ -287,7 +295,7 @@ span{
 
 .userIcon img{
     cursor:pointer;  
-    height: 5vh;
+    height: 8vh;
     margin-right: 5px; 
 }
 
@@ -495,7 +503,6 @@ footer {
 
     .menu{
         background-color: #4A7856;
-        border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -505,7 +512,7 @@ footer {
         justify-content: space-around;
         position: absolute;
         left:0px;
-        top: 5vh;
+        top: 7vh;
         transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
         opacity:0;
@@ -519,22 +526,23 @@ footer {
         font-size: 1em; 
         opacity: 0;
         width:80%;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
-        height:40px;
+        height:35px;
     }
 
     .menu a:hover{
-        background-color:gray;
-        color:black;
-        border-radius:30px;
-        height:40px;
+        opacity:.8;
     }
 
     .menuIcon{
         display:block;
         margin-left: 15px;
         order:-1;
+    }
+
+    .socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
+         display:block;
     }
 
     .logo{
