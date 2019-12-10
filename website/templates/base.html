@@ -25,12 +25,12 @@
         <div class="logo">
             <p>Logo</p>
         </div>
-
+<img src="" alt="">
         <nav class="menu ">
-            <a href="/">Inicio</a>
-            <a href="#rec">Restaurantes</a>
-            <a href="#">Comunidade</a>
-            <a href="#sobre">Sobre</a>
+            <a href="/"><img class = "houseImg" src="{% static '/images/house.png' %}" alt="">Inicio</a>
+            <a href="#rec"><img class = "fruitImg" src="{% static '/images/fruit.png' %}" alt="">Restaurantes</a>
+            <a href="#"><img class = "messageImg" src="{% static '/images/message.png' %}" alt="">Comunidade</a>
+            <a href="#sobre"><img class = "teamImg" src="{% static '/images/team.png' %}" alt="">Sobre</a>
         </nav>
 
         <div class="menuIcon">
@@ -44,7 +44,7 @@
         <p>Bem-vindo(a), {{user}}.</p>
         <a class = "linkLogout"href="/logout">Logout</a>
         {% endif %}
-            <img class= "" src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
+            <img src="{% static '/images/userIcon.png' %}" alt="Ícone de Login">
         </aside>
         <div class ="buttonBox">
             <button type="button" onclick="window.location.href = '/login';" class="toggleBtn loginButton">Login</button>

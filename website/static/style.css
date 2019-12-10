@@ -53,6 +53,10 @@ body{
     text-decoration: none;
 }
 
+.houseImg,.fruitImg,.messageImg,.teamImg{
+    height:100%;
+}
+
 .formBox{
     background-color: #4A7856;
     border-radius:30px;
