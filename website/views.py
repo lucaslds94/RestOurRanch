@@ -11,11 +11,11 @@ def cadastro(request):
 
 def restaurantes(request, categoriaEntry=""):
     review_form = Review_form(request.POST or None)
-    if review_form.is_valid():
-        review_form.save()
-        context = {
-            'msg': "Obrigada!!"
-        }
+#     if review_form.is_valid():
+#         review_form.save()
+#         context = {
+#             'msg': "Obrigada!!"
+#         }
         
     if categoriaEntry:
         lista_restaurantes = Restaurante.objects.filter(categoria=categoriaEntry)
