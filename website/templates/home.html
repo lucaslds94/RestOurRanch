@@ -3,92 +3,104 @@
 
 {% block content %}
 
-    <section class="section1">
+<section class="section1">
 
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    
-            <div id="banner" class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class= "d-block w-100" src="{% static '/images/img-banner1.png' %}" alt="Primeiro Slide">
-                </div>
-        
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{% static '/images/img-banner2.png' %}" alt="Segundo Slide">
-                </div>
-        
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{% static '/images/img-banner3.png' %}" alt="Terceiro Slide">
-                </div>
-                <div class="carousel-item">
-                    <img id="banner" class="d-block w-100" src="{% static '/images/img-banner4.png' %}" alt="Quarto Slide">
-                </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+        <div id="banner" class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static '/images/img-banner1.png' %}" alt="Primeiro Slide">
             </div>
-        
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
-    </section>
 
-    <section id="rec" class="section2">
-        <div>
-            <div class="veggie-img">
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static '/images/img-banner2.png' %}" alt="Segundo Slide">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static '/images/img-banner3.png' %}" alt="Terceiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img id="banner" class="d-block w-100" src="{% static '/images/img-banner4.png' %}" alt="Quarto Slide">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</section>
+
+<section id="rec" class="section2">
+    <div>
+        <div class="veggie-img">
+            <img src="{%static '/images/img-vegetariano-filter.jpg'%}" alt="">
+            <button type="buttonFilter" class="btn-veggie"><a
+                    href="/restaurantes/Vegetarianxs">Vegetarianxs</a></button>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div>
+        <div class="veggie-img">
             <img src="{%static '/images/img-glutenfree-filter.jpg'%}" alt="">
             <button type="buttonFilter" class="btn-veggie"><a href="/restaurantes/Celiacxs">Celiacxs</a></button>
             <div class="overlay"></div>
-            </div>
         </div>
-        <div>
-            <div class="veggie-img">
+    </div>
+    <div>
+        <div class="veggie-img">
             <img src="{%static '/images/img-vegan-filter.jpg'%}" alt="">
             <button type="buttonFilter" class="btn-veggie"><a href="/restaurantes/Veganxs">Veganxs</a></button>
             <div class="overlay"></div>
-            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="section3">
+    <div class='aboutus'>
+        <div><img class="aboutusicon" src="{% static '/images/circular.png'%}" alt="icone de uma rede de pessoas"></div>
+        <div>
+            <h2>Quem somos</h2>
         </div>
         <div>
-            <div class="veggie-img">
-            <img src="{%static '/images/img-vegetariano-filter.png'%}" alt="">
-            <button type="buttonFilter" class="btn-veggie"><a href="/restaurantes/Vegetarianxs">Vegetarianxs</a></button>
-            <div class="overlay"></div>
-            </div>
-        </div>
-    </section>
-        
-    <section id = "sobre" class="section3">
-        <div class='aboutus'> 
-            <div><img class="aboutusicon" src="{% static '/images/circular.png'%}" alt="icone de uma rede de pessoas"></div>
-        <div><h2>Quem somos</h2></div>
-            <div><p>
+            <p>
                 Somos cinco jovens programadores que acreditam no poder da tecnologia para gerar mudanças sociais.
-                Acreditamos que comidas sem ingredientes de origem animal e/ou glúten podem ser gostosas, nutritivas e, sobretudo, acessível.
-            </div></p>
+                Acreditamos que comidas sem ingredientes de origem animal e/ou glúten podem ser gostosas, nutritivas e,
+                sobretudo, acessível.
         </div>
+        </p>
+    </div>
 
-        <div class='aboutus'> 
-            <div><img class="aboutusicon" src="{% static '/images/heart.png'%}"  alt="icone de coração"></div>
-            <div><h2>Nossa Missão</h2></div>
-            <div> <p>
-                 O RestOurRanch, ou o ROR, como carinhosamente chamamos, nasceu da necessidade de encontrarmos restaurantes para quem tem alguma restrição de forma fácil.
-                 Nossa missão é organizar e reunir o máximo de informações sobre onde comer de forma tranquila sem se preocupar com tais restrições.
-                </p></div>
-            </div>
-       
-        
-    </section>
+    <div class='aboutus'>
+        <div><img class="aboutusicon" src="{% static '/images/heart.png'%}" alt="icone de coração"></div>
+        <div>
+            <h2>Nossa Missão</h2>
+        </div>
+        <div>
+            <p>
+                O RestOurRanch, ou o ROR, como carinhosamente chamamos, nasceu da necessidade de encontrarmos
+                restaurantes para quem tem alguma restrição de forma fácil.
+                Nossa missão é organizar e reunir o máximo de informações sobre onde comer de forma tranquila sem se
+                preocupar com tais restrições.
+            </p>
+        </div>
+    </div>
 
-    <footer>
-        <!-- <div class="logotipo">
+
+</section>
+
+<footer>
+    <!-- <div class="logotipo">
             <img src="..//static/images/logoteste.png" alt="">
         </div> -->
-        <!-- <div class="duvidas">
+    <!-- <div class="duvidas">
                 <p>Entre em contato conosco sempre que tiver algum problema ou dúvida.</p>
         </div> -->
-        <!-- <div class="redes_sociais"> 
+    <!-- <div class="redes_sociais"> 
             <ul>
                 <li><a href="https://www.facebook.com/" target="blank"><img src="../static/images/face.png.png" alt="Nossa Fanpage"></a></li>
                 <li><a href="https://www.instagram.com/" target="blank"><img src="../static/images/perfil.png.png" alt=" Perfil no instagram"></a></li>
@@ -104,7 +116,8 @@
 
 
 
-    </footer>
+</footer>
 </body>
 {% endblock %}
+
 </html>
