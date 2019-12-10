@@ -474,11 +474,10 @@ footer {
     width: 100%;
     color: white;
 
-
+}
 .fale_aqui {
-    font: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin: 64px 0px 16px;   
+    font-size: 30px;
+    margin: 0px 64px 0px 16px;   
 }
 
 .outros_contatos {
