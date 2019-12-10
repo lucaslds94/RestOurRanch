@@ -72,12 +72,13 @@ body{
     height: 600px;
     margin:6% auto;
     opacity: 0.9;
-    overflow:hidden; 
+    /* overflow:hidden;  */
     padding: 5px;
     position: relative;
     text-align:center;
     top:100px;
     width: 400px;
+    
 }
 
 .buttonBox{
@@ -177,7 +178,6 @@ body{
 
 #id_username, #id_password,#id_email,#id_password1,#id_password2{
     width:100%;
-    padding:10px 0;
     margin:5px 0;
     border-left:0;
     border-top:0;
@@ -365,6 +365,7 @@ span{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: tomato;
 }
 
 .section2 > div{
@@ -475,26 +476,6 @@ footer {
     color: white;
 
 }
-.fale_aqui {
-    font-size: 30px;
-    margin: 0px 64px 0px 16px;   
-}
-
-.outros_contatos {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px 0px 32px;
-    font-size: 14vw;
-
-}
-
-.h5 {
-    color: #FDB813;
-    font-family: 'Roboto', sans-serif;
-    font: 12px;
-    margin: 0px 0px 8px;
-}
-
-
 
 @media only screen and (min-width:450px) and (max-width: 768px) {
     footer {
@@ -611,7 +592,7 @@ footer {
 @media (min-width:768px){
     
     body{
-        grid-template-rows: 4vh 99vh 42vh 35vh 20vh ;
+        grid-template-rows: 4vh 105vh 42vh 35vh 20vh ;
     }
     /*
     .block-content{
@@ -634,7 +615,7 @@ footer {
 @media (max-width:768px){
     
     body{
-        grid-template-rows: 4vh 20vh 85vh 65vh 20vh ;
+        grid-template-rows: 4vh 20vh 85vh 65vh 50vh ;
     }
     /*
     .block-content{
@@ -650,6 +631,7 @@ footer {
     .section3{
         flex-direction: row;
     }
+    
 
     .aboutUsIcon {
         height: 20%;
@@ -665,5 +647,25 @@ footer {
         justify-content: center;
         background-color:tomato;
     }
+    
+    .socialMedia{
+        height:30px;
+    }
+
+    .outros_contatos a{
+        margin: 20px 0px;
+        justify-content: space-around;
+        flex-direction:row;
+        display:flex;
+    }
+    .outros_contatos{
+        margin:10px;
+    }
+   #informacoes_contato{
+       margin:10px;
+   }
+  #informacoes_contato h5{
+    font-family: 'Neucha', cursive;
+  }
     
 }
