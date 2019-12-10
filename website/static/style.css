@@ -55,6 +55,7 @@ body{
 
 .houseImg,.fruitImg,.messageImg,.teamImg{
     height:100%;
+    margin-right:10px;
 }
 
 .formBox{
@@ -499,7 +500,6 @@ footer {
 
     .menu{
         background-color: #4A7856;
-        border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -509,7 +509,7 @@ footer {
         justify-content: space-around;
         position: absolute;
         left:0px;
-        top: 5vh;
+        top: 7vh;
         transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
         opacity:0;
@@ -523,16 +523,13 @@ footer {
         font-size: 1em; 
         opacity: 0;
         width:80%;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
-        height:40px;
+        height:35px;
     }
 
     .menu a:hover{
-        background-color:gray;
-        color:black;
-        border-radius:30px;
-        height:40px;
+        opacity:.8;
     }
 
     .menuIcon{
