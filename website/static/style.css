@@ -450,18 +450,19 @@ h2.aboutus {
 
 
 footer {
-    background-color: #f7b733;
-    grid-area: footer;
+    background-color: #F7B733;
     position: relative;
-    bottom: 0px;
     width: 100%;
+    flex-direction: column;
     color: white;
+}
 
 
 .fale_aqui {
     font: 30px;
     font-family: 'Roboto', sans-serif;
-    margin: 64px 0px 16px;   
+    color: white;
+   
 }
 
 .outros_contatos {
