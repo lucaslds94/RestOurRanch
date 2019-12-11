@@ -14,7 +14,7 @@ def restaurantes(request, categoriaEntry=""):
     review_form = Review_form(request.POST or None)
     if review_form.is_valid():
        review_form.save()
-       return render(request,'home.html')
+    #    return render(request,'home.html')
 
     if categoriaEntry:
         lista_restaurantes = Restaurante.objects.filter(categoria=categoriaEntry)
