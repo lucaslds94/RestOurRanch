@@ -5,16 +5,17 @@
 {% endblock %}
 
 {% block content%}
-<h1> RESTAURANTES </h1>
+
 {% for Restaurante in restaurantes %}
-    <br>
-    <br>
-    <h2>{{Restaurante.nome}}</h2>
-    <img src="{% static 'images-restaurantes/' %}{{Restaurante.nome}}.jpg" alt="">
-    <form action="" method="post">
-        {% csrf_token %}
-        {{review_form}}
-        <button>Submit!</button>
-    </form>
+    <br><br><br><br><br><br><br><br>
+    <section class="section-restaurantes">            
+        <h2 id = 'restaurantes_nome'>{{Restaurante.nome}}</h2>
+        <img src="{% static 'images-restaurantes/' %}{{Restaurante.nome}}.jpg" alt="" id = 'images_restaurantes'>
+        <form action="" method="post" id = 'form_restaurante'>
+            {% csrf_token %}
+            {{review_form}}
+            <button id ='button_rest'>Submit!</button>
+        </form>
+    </section>
 {% endfor %}
 {% endblock %}
