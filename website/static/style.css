@@ -8,21 +8,22 @@ body{
                         'section2'
                         'section3'
                         'footer';
-    
+
     grid-template-columns: 100%;
-    grid-template-rows: 4vh 110vh 42vh 60vh 60vh ;                           
+    grid-template-rows: 10vh 30vh 110vh 35vh 20vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
 }
 
 #header{
     align-items: center;
-    background-color: #4a7856;
+    background-color: tomato;
     display: flex;
     grid-area: header;
     justify-content: space-between;
-    position:fixed;
+    position:relative;
     width:100%;
+    height: 80px;
     z-index: 1;
 }
 /*
@@ -31,8 +32,13 @@ body{
 }
 */
 .logo{
-    background-color: lightgray;
+    background-color:tomato;
     width: 100px;
+}
+
+.logoOficial{
+    width: 80px;
+    height: 80px;
 }
 
 .menu{
@@ -67,7 +73,7 @@ body{
 }
 
 .formBox{
-    background-color: #4A7856;
+    background-color:#f7b733;
     border-radius:30px;
     height: 600px;
     margin:6% auto;
@@ -94,7 +100,7 @@ body{
     columns: #222222;;
     width: 110px;
     height:35px;
-    border: 1px solid #338033;
+    border: 1px solid #b733;
     font-size:1em;
     border-radius:30px;
     transition: .6s;
@@ -124,7 +130,7 @@ body{
     content:'';
     display:block;
     position:absolute;
-    background:rgba(255,255,255,0.2);
+    background:rgba(255, 255, 255, 0.2);
     width:30px;
     height:100%;
     left:30px;
@@ -135,7 +141,7 @@ body{
 }
 
 .toggleBtn:hover{
-    background:#338033;
+    background: #f7b733;
     cursor:pointer;
 }
 
@@ -182,7 +188,8 @@ body{
     border-left:0;
     border-top:0;
     border-right:0;
-    border-bottom:1px solid #999;
+    border-bottom:1px solid #f7b733;
+    border-radius: 30%;
     outline:none;
     display:flex;
     font-size:1.2em;
@@ -206,7 +213,7 @@ body{
     cursor:pointer;
     display:block;
     margin:auto;
-    background-color:#84DCC6;
+    background-color:yellow;
     border:0;
     outline:none;
     border-radius:30px;
@@ -220,11 +227,11 @@ body{
 }
 
 .toggleBtn2{ 
-    background:#ccc;
+    background:white;
     columns: #222222;;
     width: 50%;
     height:35px;
-    border: 1px solid #338033;
+    border: 1px solid #f7b733;
     font-size:1em;
     border-radius:30px;
     transition: .6s;
@@ -241,7 +248,7 @@ body{
     content:'';
     display:block;
     position:absolute;
-    background: rgba(255,255,255,0.5);
+    background: yellow;
     width:30px;
     height:100%;
     left:0;
@@ -255,7 +262,7 @@ body{
     content:'';
     display:block;
     position:absolute;
-    background:rgba(255,255,255,0.2);
+    background:yellow;
     width:30px;
     height:100%;
     left:30px;
@@ -266,7 +273,7 @@ body{
 }
 
 .toggleBtn2:hover{
-    background:#338033;
+    background:tomato;
     cursor:pointer;
 }
 
@@ -296,14 +303,13 @@ span{
 .userIcon{
     display:flex;  
     align-items: center; 
-    /* flex-grow: 1; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .userIcon img{
     cursor:pointer;  
-    height: 6vh;
-   
+    height: 8vh;
+    margin-right: 10px;
 }
 
 .userIcon img:hover{
@@ -348,7 +354,7 @@ span{
 /* BANNER START */
 .section1{
     grid-area: section1;  
-    background-color: #fc4a1a;
+    background-color: tomato;
 }
 
 #banner{
@@ -373,10 +379,12 @@ span{
 .veggie-img{
     position: relative;
     margin-bottom: 15px;
+
 }
 
 .veggie-img img{
     width: 100%;
+    border-radius: 40px;
 }
 
 .btn-veggie{
@@ -417,6 +425,7 @@ span{
     width: 100%;
     background: #333;
     position: absolute;
+    border-radius: 40px;
     top: 0;
     opacity: .0;
     transition: .5s;
@@ -439,27 +448,28 @@ span{
 
 .section3{
     display: flex;
-    flex-direction: row;
-    background-color: rgb(166, 168, 166);
+    flex-direction: column;
+    background-color: #f7b733;
     grid-area: section3;
     color: #fff;
-    padding: 10px;
+    padding 0;
 }
 
 .aboutUs {
 
     padding: 20px;
-    margin: 10 auto;
+    margin: 0;
     text-align: center;
+    align-items: flex-start ;
 }
 
 h2.aboutus {
-    font-size: 8px;
+    font-size: 30px;
 }
 
 .aboutUsIcon {
-    height: 7%;
-    width: 7%;
+    height: 10%;
+    width: 10%;
 }
 
 /* ABOUT US END*/
@@ -519,7 +529,7 @@ h4.informacoes_contato {
     }
 
     .menu{
-        background-color: #4A7856;
+        background-color: rgba(255, 99, 71, 0.746);
         border-bottom-right-radius: 30px;
         display: flex;
         flex-direction: column;
