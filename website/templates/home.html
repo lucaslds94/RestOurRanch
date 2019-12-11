@@ -28,7 +28,7 @@
 
         <div id="banner" class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{% static '/images/img-banner1.png' %}" alt="Primeiro Slide">
+                <img class="d-block w-100" src="{% static '/images/banner_oficial.jpg' %}" alt="Primeiro Slide">
             </div>
 
             <div class="carousel-item">
@@ -42,15 +42,16 @@
                 <img id="banner" class="d-block w-100" src="{% static '/images/img-banner4.png' %}" alt="Quarto Slide">
             </div>
         </div>
+    </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
     </div>
 </section>
 
@@ -83,16 +84,17 @@
 
 <section id="sobre" class="section3">
     <div class='aboutUs'>
-        <div><img class="aboutUsIcon" src="{% static '/images/circular.png'%}" alt="icone de uma rede de pessoas"></div>
+        <div><img class="aboutUsIcon" src="{% static '/images/circular.png'%}" alt="icone de uma rede de pessoas">
+        </div>
         <div>
             <br>
             <h2>Quem somos</h2>
         </div>
         <div>
-           
             <p>
                 Somos cinco jovens programadores que acreditam no poder da tecnologia para gerar mudanças sociais.
-                Acreditamos que comidas sem ingredientes de origem animal e/ou glúten podem ser gostosas, nutritivas e,
+                Acreditamos que comidas sem ingredientes de origem animal e/ou glúten podem ser gostosas, nutritivas
+                e,
                 sobretudo, acessível.
         </div>
         </p>
@@ -105,7 +107,6 @@
             <h2>Nossa Missão</h2>
         </div>
         <div>
-            
             <p>
                 O RestOurRanch, ou o ROR, como carinhosamente chamamos, nasceu da necessidade de encontrarmos
                 restaurantes para quem tem alguma restrição de forma fácil.
@@ -119,38 +120,41 @@
 </section>
 
 <footer>
+    <div class="informacoes_contato">
+        <div class="aux1">
+            <img class="icones_footer" src="{% static '/images/icone_fale_footer.png'%}" alt="balões de falas de HQ">
 
-    <div class="outros_contatos">
-            <a href="/">
-                <img class="mediaFooter" src="{% static '/images/facebook.png' %}" alt="">
-                <img class="mediaFooter" src="{% static '/images/instagram.png' %}" alt="">
-                <img class="mediaFooter" src="{% static '/images/youtube.png' %}" alt="">
-                <img class="mediaFooter" src="{% static '/images/twitter.png' %}" alt="">
-            </a>
-            <br>
-            
-        <h3> Fale com a gente sempre que tiver alguma dúvida ou
-            problema :) <br><br>
-        </h3>
+            <h4 id="textFooter5"> FALE COM A GENTE</h4>
+            <h4 id="textFooter1">sempre que tiver alguma
+                dúvida ou problema ! :)</h4> <br>
+
+        </div>
+
+        <div class="aux2">
+            <img class="icones_footer" src="{% static '/images/icone_relogio_footer.png'%}"
+                alt="icone de um relógio para representar o horário de funcionamento">
+
+            <h4> FUNCIONAMENTO
+                <h3 id="textFooter2"> De segunda à sexta, das 10h às 17h</h3></br>
+        </div>
+
+        <div class="aux3">
+            <img class="icones_footer" src="{% static '/images/icone_telefone_footer.png'%}" alt="icone de um telefone">
+
+            <h4> TELEFONE</h4>
+            <h3 id="textFooter3"> 11 2517 2618</h3> </br>
+        </div>
+
+        <div class="aux4">
+            <img class="icones_footer" src="{% static '/images/icone_email_footer.png'%}" alt="icone de um envelope">
+            <h4> E-MAIL </h4>
+            <h3 id="textFooter4"> restourranch@informacoes.com.br</h3>
+        </div>
     </div>
 
-    <section id="informacoes_contato">
-        <h5> FUNCIONAMENTO</h5> </br>
-        <h6> De segunda à sexta, das 10h às 17h</h6>
-        <h5> TELEFONE</h5> <br>
-        <h6> 11 2517 2618</h6>
-        <h5> E-MAIL </h5> </br>
-        <h6> restourranch@informacoes.com.br</h6>
-    </section>
-
 </footer>
 
 
-
-
-
-
-</footer>
 </body>
 {% endblock %}
 
