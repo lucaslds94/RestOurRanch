@@ -1,5 +1,6 @@
 html { 
     scroll-behavior: smooth; 
+    overflow-x:hidden;
 } 
 body{
     display: grid;
@@ -10,9 +11,10 @@ body{
                         'footer';
 
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 110vh 50vh 60vh 20vh ;                           
+    grid-template-rows: 10vh 110vh 50vh 55vh 20vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
+   
 }
 
 #header{
@@ -90,7 +92,7 @@ body{
 .buttonBox{
     position:absolute;
     right:0;
-    top:85px;
+    top:15vh;
     transform:translateX(130%) ;
     transition: transform 0.5s ease-in;  
 }
@@ -374,7 +376,7 @@ span{
 }
 
 .section2 > div{
-    width: 90%;
+    width: 30%;
 }
 .veggie-img{
     position: relative;
@@ -461,6 +463,7 @@ span{
     margin: 0;
     text-align: center;
     align-items: flex-start ;
+    justify-content: center;
 }
 
 h2.aboutus {
@@ -476,20 +479,26 @@ h2.aboutus {
 
 
 
-footer {
-    background-color: #F7B733;
-    position: relative;
-    width: 100%;
-    flex-direction: column;
-    color: white;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4ABDAC;
+    grid-area: footer;
+    padding: 10px;
+    
+}
+.aux1,.aux2,.aux3,.aux4{
+    width:20%
+}
+.aux1 img,.aux2 img,.aux3 img,.aux4 img{
+    height: 30px;
+    width:30px;
+    margin:10px;
 }
 
-
-.fale_aqui {
-    font: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-   
+#textFooter1,#textFooter2,#textFooter3,#textFooter4{
+    font-size: 1em;
+    width:100%;
 }
 
 
@@ -503,6 +512,8 @@ footer {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    background-color: #4ABDAC;
+    color:white;
 }
 
 .icones_footer {
@@ -529,6 +540,9 @@ h4.informacoes_contato {
 @media(max-width:1000px){
     body{
         overflow-x: hidden;
+        grid-template-rows: 4vh 20vh 900px 520px 710px ;
+        width:100%;
+        margin:0;
     }
 
     header{
@@ -549,7 +563,7 @@ h4.informacoes_contato {
         justify-content: space-around;
         position: absolute;
         left:0px;
-        top: 7vh;
+        top: 10vh;
         transform:translateX(-500px) ;
         transition: transform 0.5s ease-in;   
         opacity:0;
@@ -587,9 +601,34 @@ h4.informacoes_contato {
         display: flex;
         justify-content: center; 
     }
+
+    .logo img{
+        cursor: pointer;
+    }
     
     .userIcon{
         flex-grow: 0;
+    }
+
+    .sec2Title{
+        display:flex;
+        margin-top:30px;
+        font-weight: 500;
+        width:100%;
+        height:40px;
+        justify-content: center;
+        background-color:tomato;
+    }
+
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section2 > div{
+        height: 30%;
+        width:80%;
     }
 }
 
@@ -650,9 +689,14 @@ h4.informacoes_contato {
 }  */
 
 @media (max-width:768px){
+
+    html { 
+        scroll-behavior:auto; 
+    } 
     
     body{
-        grid-template-rows: 4vh 20vh 85vh 65vh 50vh ;
+        grid-template-rows: 4vh 20vh 910px 520px 710px ;
+        overflow-x:hidden;
     }
     /*
     .block-content{
@@ -664,9 +708,13 @@ h4.informacoes_contato {
         justify-content: center;
         align-items: center;
     }
+    .section2 >div{
+        height:250px;
+    }
     
     .section3{
         flex-direction: row;
+
     }
     
 
@@ -709,8 +757,13 @@ h4.informacoes_contato {
        font-size:1.5em;
    }
    .aux1,.aux2,.aux3,.aux4{
-    width:80%;
+    font-size:1.5em;
+    width:90%;
 }
+    footer{
+        background-color: #4ABDAC;
+        color:white;
+    }
   
     
 }
