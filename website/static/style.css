@@ -1,5 +1,6 @@
 html { 
     scroll-behavior: smooth; 
+    overflow-x:hidden;
 } 
 body{
     display: grid;
@@ -10,9 +11,10 @@ body{
                         'footer';
 
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 110vh 50vh 60vh 20vh ;                           
+    grid-template-rows: 10vh 110vh 50vh 55vh 20vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
+   
 }
 
 #header{
@@ -90,7 +92,7 @@ body{
 .buttonBox{
     position:absolute;
     right:0;
-    top:85px;
+    top:15vh;
     transform:translateX(130%) ;
     transition: transform 0.5s ease-in;  
 }
@@ -495,7 +497,7 @@ h2.aboutus {
 
 #textFooter1,#textFooter2,#textFooter3,#textFooter4{
     font-size: 1em;
-    width:80%;
+    width:100%;
 }
 
 
@@ -509,6 +511,8 @@ h2.aboutus {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    background-color: #4ABDAC;
+    color:white;
 }
 
 .icones_footer {
@@ -536,7 +540,8 @@ h4.informacoes_contato {
     body{
         overflow-x: hidden;
         grid-template-rows: 10vh 110vh 50vh 60vh 20vh ;                           
-
+        width:100%;
+        margin:0;
     }
 
     header{
@@ -594,6 +599,10 @@ h4.informacoes_contato {
         align-items: center;
         display: flex;
         justify-content: center; 
+    }
+
+    .logo img{
+        cursor: pointer;
     }
     
     .userIcon{
@@ -681,6 +690,7 @@ h4.informacoes_contato {
     
     body{
         grid-template-rows: 4vh 20vh 85vh 65vh 87vh ;
+        overflow-x:hidden;
     }
     /*
     .block-content{
