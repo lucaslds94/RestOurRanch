@@ -689,9 +689,13 @@ h4.informacoes_contato {
 }  */
 
 @media (max-width:768px){
+
+    html { 
+        scroll-behavior:auto; 
+    } 
     
     body{
-        grid-template-rows: 4vh 20vh 900px 520px 710px ;
+        grid-template-rows: 4vh 20vh 910px 520px 710px ;
         overflow-x:hidden;
     }
     /*
