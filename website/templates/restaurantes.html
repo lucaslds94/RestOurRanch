@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content%}
+{% block css %}
+{% static 'restaurantes-style.css'%}
+{% endblock %}
 
+{% block content%}
 <h1> RESTAURANTES </h1>
 {% for Restaurante in restaurantes %}
     <br>
