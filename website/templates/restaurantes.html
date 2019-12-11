@@ -7,7 +7,7 @@
 {% block content%}
 
 {% for Restaurante in restaurantes %}
-    <br><br><br><br><br><br><br><br>
+    <br>
     <section class="section-restaurantes">            
         <h2 id = 'restaurantes_nome'>{{Restaurante.nome}}</h2>
         <img src="{% static 'images-restaurantes/' %}{{Restaurante.nome}}.jpg" alt="" id = 'images_restaurantes'>
