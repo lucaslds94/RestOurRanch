@@ -376,7 +376,7 @@ span{
 }
 
 .section2 > div{
-    width: 90%;
+    width: 30%;
 }
 .veggie-img{
     position: relative;
@@ -540,7 +540,7 @@ h4.informacoes_contato {
 @media(max-width:1000px){
     body{
         overflow-x: hidden;
-        grid-template-rows: 10vh 110vh 50vh 60vh 20vh ;                           
+        grid-template-rows: 4vh 20vh 900px 520px 710px ;
         width:100%;
         margin:0;
     }
@@ -627,7 +627,7 @@ h4.informacoes_contato {
     }
 
     .section2 > div{
-        height: 30%;
+        height: 250px;
     }
 }
 
