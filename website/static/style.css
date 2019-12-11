@@ -627,7 +627,8 @@ h4.informacoes_contato {
     }
 
     .section2 > div{
-        height: 250px;
+        height: 30%;
+        width:80%;
     }
 }
 
