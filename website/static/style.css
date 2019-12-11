@@ -466,47 +466,42 @@ h2.aboutus {
 
 
 
-footer {
-    background-color: #F7B733;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4ABDAC;
     position: relative;
-    width: 100%;
-    flex-direction: column;
-    color: white;
-<<<<<<< HEAD
+    grid-area: footer;
+    padding: 10px;
 }
 
-
-.fale_aqui {
-    font: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-   
-=======
->>>>>>> 35ced9e7e21b26c889eb0b6492edcb641495d4e9
-}
 .mediaFooter{
     height:30px;
 }
-.outros_contatos{
-    margin:10px;
+
+.informacoes_contato{
+    padding: 20px;
+    margin: 10 auto;
+    text-align: center;
 }
-.outros_contatos a{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
+
+.icones_footer {
+    height: 5%;
+    width: 5%;
 }
-#informacoes_contato{
-    margin:10px;
+
+h3.informacoes_contato {
+    font-size: 20px;
+}
+
+h4.informacoes_contato {
+    font-size: 20px;
 }
 
 @media only screen and (min-width:450px) and (max-width: 768px) {
     footer {
         clear: both;
         width: 100%
-    }
-    .logotipo {	
-        width: 50%;
-        float: left;
     }
 }
   
