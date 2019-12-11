@@ -10,7 +10,7 @@ body{
                         'footer';
     
     grid-template-columns: 100%;
-    grid-template-rows: 9vh 30vh 110vh 35vh 20vh ;                           
+    grid-template-rows: 4vh 110vh 42vh 60vh 60vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
 }
@@ -40,7 +40,7 @@ body{
 }
 
 .menu a{  
-    
+    font-size:1.2em;
     font-weight:500;
     margin:0px 30px;
     text-decoration: none;
@@ -51,6 +51,11 @@ body{
     color:#95A3B3;
     opacity:0.8;
     text-decoration: none;
+}
+
+.bemVindo p{
+    top:8vh;
+    background-color:tomato;
 }
 
 .socialMedia,.fruitImg,.teamImg,.houseImg,.messageImg{
@@ -67,18 +72,19 @@ body{
     height: 600px;
     margin:6% auto;
     opacity: 0.9;
-    overflow:hidden; 
+    /* overflow:hidden;  */
     padding: 5px;
     position: relative;
     text-align:center;
     top:100px;
     width: 400px;
+    
 }
 
 .buttonBox{
     position:absolute;
     right:0;
-    top:75px;
+    top:85px;
     transform:translateX(130%) ;
     transition: transform 0.5s ease-in;  
 }
@@ -154,7 +160,6 @@ body{
 }
 
 .redesSociais img{
-    box-shadow: 0 0 20px 0 #84DCC6;
     cursor:pointer; 
     margin:0 12px;
     width:30px;
@@ -173,20 +178,22 @@ body{
 
 #id_username, #id_password,#id_email,#id_password1,#id_password2{
     width:100%;
-    padding:10px 0;
     margin:5px 0;
     border-left:0;
     border-top:0;
     border-right:0;
     border-bottom:1px solid #999;
     outline:none;
-    background:transparent;
     display:flex;
-    justify-content: center;     
+    font-size:1.2em;
+    justify-content: center;   
+      
 }
 
 .requiredField, .textInput{
     opacity:1;
+    font-weight: 600;
+    font-size:1.2em;
 }
 
 ::placeholder{
@@ -289,14 +296,14 @@ span{
 .userIcon{
     display:flex;  
     align-items: center; 
-    flex-grow: 1;
-    justify-content: space-between;
+    /* flex-grow: 1; */
+    justify-content: space-around;
 }
 
 .userIcon img{
     cursor:pointer;  
-    height: 8vh;
-    margin-right: 5px; 
+    height: 6vh;
+   
 }
 
 .userIcon img:hover{
@@ -304,14 +311,19 @@ span{
 }
 
 .userIcon p {
-    height: 100%;
+    height: 70%;
     display: flex;
-    margin:0;
+    margin-top: 10px;
+    margin-right:5px;
+    font-size:0.9em;
+    align-items: center;
+    color:#fff;
 }
 
 .linkLogout{
     text-decoration:none;
     color:#fff;
+    margin: 0 7px;
 }
 
 .linkLogout:hover{
@@ -350,9 +362,9 @@ span{
 .section2{
     grid-area: section2;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: tomato;
 }
 
 .section2 > div{
@@ -413,6 +425,12 @@ span{
 .veggie-img:hover .overlay{
     opacity: .5;
     height: 100%;
+
+}
+
+.sec2Title{
+    display:none;
+    color:#fff;
 }
 
 /* IMAGES FILTER END*/
@@ -421,14 +439,14 @@ span{
 
 .section3{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(166, 168, 166);
     grid-area: section3;
     color: #fff;
     padding: 10px;
 }
 
-.aboutus {
+.aboutUs {
 
     padding: 20px;
     margin: 10 auto;
@@ -439,10 +457,9 @@ h2.aboutus {
     font-size: 8px;
 }
 
-.aboutusicon {
-    height: 5%;
-    width: 5%;
-
+.aboutUsIcon {
+    height: 7%;
+    width: 7%;
 }
 
 /* ABOUT US END*/
@@ -455,6 +472,7 @@ footer {
     width: 100%;
     flex-direction: column;
     color: white;
+<<<<<<< HEAD
 }
 
 
@@ -463,23 +481,23 @@ footer {
     font-family: 'Roboto', sans-serif;
     color: white;
    
+=======
+>>>>>>> 35ced9e7e21b26c889eb0b6492edcb641495d4e9
 }
-
-.outros_contatos {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px 0px 32px;
-    font-size: 14vw;
-
+.mediaFooter{
+    height:30px;
 }
-
-.h5 {
-    color: #FDB813;
-    font-family: 'Roboto', sans-serif;
-    font: 12px;
-    margin: 0px 0px 8px;
+.outros_contatos{
+    margin:10px;
 }
-
-
+.outros_contatos a{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+#informacoes_contato{
+    margin:10px;
+}
 
 @media only screen and (min-width:450px) and (max-width: 768px) {
     footer {
@@ -521,7 +539,7 @@ footer {
         transition: transform 0.5s ease-in;   
         opacity:0;
         z-index:3;
-        width: 50%;
+        width: 60%;
     }
     
     .menu a{
@@ -592,17 +610,18 @@ footer {
     transform:rotate(45deg)translate(-5px,-6px)
 }
 
+/* 
 @media (min-width:768px){
     
     body{
-        grid-template-rows: 4vh 99vh 42vh 35vh 20vh ;
-    }
+        grid-template-rows: 4vh 105vh 42vh 35vh 20vh ;
+    } */
     /*
     .block-content{
         margin-top: 50px;
     }
     */
-    .section2{
+    /* .section2{
         flex-direction: row;
     }
     
@@ -613,4 +632,62 @@ footer {
     .section3{
         flex-direction: row;
     }
+}  */
+
+@media (max-width:768px){
+    
+    body{
+        grid-template-rows: 4vh 20vh 85vh 65vh 50vh ;
+    }
+    /*
+    .block-content{
+        margin-top: 50px;
+    }
+    */
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section3{
+        flex-direction: row;
+    }
+    
+
+    .aboutUsIcon {
+        height: 20%;
+        width: 20%;
+    }
+
+    .sec2Title{
+        display:flex;
+        margin-top:30px;
+        font-weight: 500;
+        width:100%;
+        height:40px;
+        justify-content: center;
+        background-color:tomato;
+    }
+    
+    .socialMedia{
+        height:30px;
+    }
+
+    .outros_contatos a{
+        margin: 20px 0px;
+        justify-content: space-around;
+        flex-direction:row;
+        display:flex;
+    }
+    .outros_contatos{
+        margin:10px;
+    }
+   #informacoes_contato{
+       margin:10px;
+   }
+  #informacoes_contato h5{
+    font-family: 'Neucha', cursive;
+  }
+    
 }
