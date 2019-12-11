@@ -10,7 +10,7 @@ body{
                         'footer';
 
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 30vh 110vh 35vh 20vh ;                           
+    grid-template-rows: 10vh 110vh 50vh 60vh 20vh ;                           
     margin:0;
     font-family: 'Neucha', cursive;
 }
@@ -448,11 +448,11 @@ span{
 
 .section3{
     display: flex;
-    flex-direction: column;
+
     background-color: #f7b733;
     grid-area: section3;
     color: #fff;
-    padding 0;
+    padding:0;
 }
 
 .aboutUs {
@@ -480,10 +480,23 @@ h2.aboutus {
     display: flex;
     justify-content: space-between;
     background-color: #4ABDAC;
-    position: relative;
     grid-area: footer;
     padding: 10px;
+    
 }
+.aux1,.aux2,.aux3,.aux4{
+    width:20%
+}
+.aux1 img,.aux2 img,.aux3 img,.aux4 img{
+    height: 30px;
+    width:30px;
+    margin:10px;
+}
+
+#textFooter1,#textFooter2,#textFooter3,#textFooter4{
+    font-size: 1em;
+}
+
 
 .mediaFooter{
     height:30px;
@@ -493,6 +506,8 @@ h2.aboutus {
     padding: 20px;
     margin: 10 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icones_footer {
@@ -688,11 +703,29 @@ h4.informacoes_contato {
     .outros_contatos{
         margin:10px;
     }
-   #informacoes_contato{
+   .informacoes_contato{
        margin:10px;
+       display:flex;
+       justify-content: space-between;
+       flex-direction: column;
+       align-items: center;
    }
-  #informacoes_contato h5{
-    font-family: 'Neucha', cursive;
-  }
+   .aux1 h3,.aux2 h3,.aux3 h3,.aux4 h3{
+       font-size:1.5em;
+   }
+   .aux1,.aux2,.aux3,.aux4{
+    width:80%;
+}
+  
     
 }
+
+
+.aux1 h3,.aux2 h3,.aux3 h3,.aux4 h3{
+    font-size:1.3em;
+}
+
+.aux1 h4,.aux2 h4,.aux3 h4,.aux4 h4{
+    font-size: 1em;
+}
+
