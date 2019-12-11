@@ -5,6 +5,7 @@ class Review_form(forms.ModelForm):
     class Meta:
         model = Review
         fields = [
+            'restaurantes',
             'rating',
             'usuario',
             'comment',           

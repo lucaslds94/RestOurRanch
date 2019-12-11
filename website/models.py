@@ -35,4 +35,4 @@ class Review(models.Model):
     rating = models.IntegerField(choices=RATING_CHOICES)
 
     def __str__(self):
-        return self.restaurantes
+        return self.restaurantes.nome
